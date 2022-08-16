@@ -25,20 +25,32 @@
         font-family: 'Fredoka One', cursive;
     }
     .counter {
-        font-size: 30px;
-        font-weight: 400;
-        color: white;
+        border-radius: 20px 20px 0px 0px;
+        padding: 10px 0px;
+        background-color: #fff;
+        font-size: 35px;
+        font-weight: 300;
+        color: #434343;
     }
     .label {
-        font-size: 14px;
+        border-radius: 0px 0px 20px 20px;
+        padding: 10px 10px;
+        background-color: #873674;
+        font-size: 12px;
         font-weight: 100;
         color: white;
         text-transform: capitalize;
     }
     .timerbox {
+        width: 200px;
         padding: 20px;
-        background-color: #c07fb0;
         text-align: center;
+    }
+    .wrapper {
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 
@@ -46,27 +58,27 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-3">
+            <div class="wrapper col-sm-12 col-md-3">
                 <div class="timerbox mb-3 mb-md-0">
-                    <div class="counter"><span id="days"></span></div>
+                    <div class="counter"><span id="days">--</span></div>
                     <div class="label">DAYS</div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-3">
+            <div class="wrapper col-sm-12 col-md-3">
                 <div class="timerbox mb-3 mb-md-0">
-                    <div class="counter"><span id="hours"></span></div>
+                    <div class="counter"><span id="hours">--</span></div>
                     <div class="label">HOURS</div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-3">
+            <div class="wrapper col-sm-12 col-md-3">
                 <div class="timerbox mb-3 mb-md-0">
-                    <div class="counter"><span id="minutes"></span></div>
+                    <div class="counter"><span id="minutes">--</span></div>
                     <div class="label">MINUTES</div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-3">
+            <div class="wrapper col-sm-12 col-md-3">
                 <div class="timerbox mb-0 mb-sm-3 mb-xs-3">
-                    <div class="counter"><span id="seconds"></span></div>
+                    <div class="counter"><span id="seconds">--</span></div>
                     <div class="label">SECONDS</div>
                 </div>
             </div>
@@ -96,10 +108,10 @@
         let now = new Date(Date.now()).getTime();
         let diff = count_down - now;
 
-        document.getElementById('days').innerText = Math.floor(diff / day);
-        document.getElementById('hours').innerText = Math.floor(diff % day / hour);
-        document.getElementById('minutes').innerText = Math.floor(diff % hour / minute);
-        document.getElementById('seconds').innerText = Math.floor(diff % minute / second);
+        document.getElementById('days').innerHTML = Math.floor(diff / day);
+        document.getElementById('hours').innerHTML = Math.floor(diff % day / hour);
+        document.getElementById('minutes').innerHTML = Math.floor(diff % hour / minute);
+        document.getElementById('seconds').innerHTML = Math.floor(diff % minute / second);
         }
 
         function resetCountdown() {
