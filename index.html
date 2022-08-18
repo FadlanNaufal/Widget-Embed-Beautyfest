@@ -53,7 +53,7 @@
         font-size: 35px;
         font-weight: 300;
         color: #fff;
-        background-image: url('image/bgcounter.png');
+        background-image: url('image/bgcounter-dark.png');
     }
     .label {
         border-radius: 0px 0px 20px 20px;
@@ -67,9 +67,12 @@
         padding: 20px;
         text-align: center;
     }
-    .wrapper {
-        /* background-color: red; */
+    /* .counter.days, .counter.minutes, .counter.seconds {
+        background-image: url('image/bgcounter-light.png');
     }
+    .counter.hours {
+        background-image: url('image/bgcounter-dark.png');
+    } */
 </style>
 
 <body>
@@ -78,25 +81,25 @@
         <div class="row">
             <div class="wrapper col-3 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 offset-lg-2 px-0 px-sm-0 px-md-0 px-lg-0">
                 <div class="timerbox">
-                    <div class="counter"><span id="days">--</span></div>
+                    <div class="counter days"><span id="days">--</span></div>
                     <div class="label">DAYS</div>
                 </div>
             </div>
             <div class="wrapper col-3 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 px-0 px-sm-0 px-md-0 px-lg-0">
                 <div class="timerbox">
-                    <div class="counter"><span id="hours">--</span></div>
+                    <div class="counter hours"><span id="hours">--</span></div>
                     <div class="label">HOURS</div>
                 </div>
             </div>
             <div class="wrapper col-3 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 px-0 px-sm-0 px-md-0 px-lg-0">
                 <div class="timerbox">
-                    <div class="counter"><span id="minutes">--</span></div>
+                    <div class="counter minutes"><span id="minutes">--</span></div>
                     <div class="label">MINUTES</div>
                 </div>
             </div>
             <div class="wrapper col-3 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 px-0 px-sm-0 px-md-0 px-lg-0">
                 <div class="timerbox">
-                    <div class="counter"><span id="seconds">--</span></div>
+                    <div class="counter seconds"><span id="seconds">--</span></div>
                     <div class="label">SECONDS</div>
                 </div>
             </div>
