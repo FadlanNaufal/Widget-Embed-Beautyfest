@@ -31,6 +31,23 @@
         font-family: 'Fredoka One', cursive;
         /* font-family: Repus; */
     }
+
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+
+        .counter {
+            font-size: 16px !important;
+            border-radius: 16px 16px 0px 0px !important;
+        }
+
+        .label {
+            font-size: 7px !important;
+            border-radius: 0px 0px 16px 16px !important;
+        }
+    }
+
     .counter {
         border-radius: 20px 20px 0px 0px;
         padding: 10px 0px;
@@ -62,25 +79,25 @@
 
     <div class="container">
         <div class="row">
-            <div class="wrapper col-12 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 offset-lg-2 px-5 px-sm-0 px-md-0 px-lg-0">
+            <div class="wrapper col-3 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 offset-lg-2 px-0 px-sm-0 px-md-0 px-lg-0">
                 <div class="timerbox">
                     <div class="counter"><span id="days">--</span></div>
                     <div class="label">DAYS</div>
                 </div>
             </div>
-            <div class="wrapper col-12 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 px-5 px-sm-0 px-md-0 px-lg-0">
+            <div class="wrapper col-3 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 px-0 px-sm-0 px-md-0 px-lg-0">
                 <div class="timerbox">
                     <div class="counter"><span id="hours">--</span></div>
                     <div class="label">HOURS</div>
                 </div>
             </div>
-            <div class="wrapper col-12 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 px-5 px-sm-0 px-md-0 px-lg-0">
+            <div class="wrapper col-3 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 px-0 px-sm-0 px-md-0 px-lg-0">
                 <div class="timerbox">
                     <div class="counter"><span id="minutes">--</span></div>
                     <div class="label">MINUTES</div>
                 </div>
             </div>
-            <div class="wrapper col-12 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 px-5 px-sm-0 px-md-0 px-lg-0">
+            <div class="wrapper col-3 col-sm-12 col-md-3 col-lg-2 offset-0 offset-sm-0 offset-md-0 px-0 px-sm-0 px-md-0 px-lg-0">
                 <div class="timerbox">
                     <div class="counter"><span id="seconds">--</span></div>
                     <div class="label">SECONDS</div>
