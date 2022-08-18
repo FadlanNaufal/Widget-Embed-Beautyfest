@@ -4,6 +4,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
+  <link rel="icon" href="https://cdn.popbela.com/bfa/assets/favicon.png" type="image/png" sizes="44x44">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +21,19 @@
 </head>
 
 <style>
+    @font-face {
+    font-family: Repus;
+    src:url(Repus.otf);
+    }
     body {
-        background-color: #DFBAD6;
+        /* background-color: #DFBAD6; */
+        background-image: url('bg.png');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         font-family: 'Fredoka One', cursive;
+        /* font-family: Repus; */
     }
     .counter {
         border-radius: 20px 20px 0px 0px;
@@ -31,6 +42,7 @@
         font-size: 35px;
         font-weight: 300;
         color: #434343;
+        
     }
     .label {
         border-radius: 0px 0px 20px 20px;
